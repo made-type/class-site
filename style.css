@@ -3,9 +3,14 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  padding: 20px;
+}
+
 p {
   font-family: monospace;
   font-size: 3em;
+  margin-left: auto;
 }
 
 @keyframes changing-colors {
