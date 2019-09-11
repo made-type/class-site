@@ -1,0 +1,77 @@
+html {
+  background-color: floralwhite;
+}
+
+body {
+  width: 50%;
+  margin: 20px auto;
+}
+
+a {
+  color:black;
+  text-decoration: underline dotted;
+}
+
+a:hover{
+  color: hotpink;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px
+}
+
+.prelude {
+  border: 2px;
+  border-style: solid;
+  padding: 20px;
+}
+
+.conversation {
+  border-top: 0px;
+  border-left: 2px;
+  border-right: 2px;
+  border-bottom: 0px;
+  border-style: solid;
+  padding: 20px;
+}
+
+.some-things {
+  border: 2px;
+  border-style: solid;
+  padding: 20px;
+
+
+}
+
+.niemannphoto {
+  position: left;
+  display: inline;
+}
+
+/* .niemann {
+  position: left;
+  margin-left: 10px;
+  display: inline;
+  /* height:100px; */
+} */
+
+ol.a {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+
+/* on using a typeface from your computer */
