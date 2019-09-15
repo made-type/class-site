@@ -1,0 +1,56 @@
+body {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  font-style: underline dotted 2px;
+  font-family: monospace;
+}
+
+.button {
+  width: 7%;
+  height: 25%;
+  background: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .5s ease;
+  color: black;
+}
+
+.button:hover {
+  width: 7%;
+  height: 40%;
+  transform: scale(200%);
+  background: black;
+  color: white;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0px 15px 15px 0px;
+
+}
+
+.next {
+  right: 0;
+  border-radius: 15px 0px 0px 15px;
+
+}
+
+.image {
+  display: none;
+  max-height: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hover-img:hover .image {
+  display: block;
+}
