@@ -8,10 +8,27 @@ body {
 }
 
 p {
-  font-family: monospace;
-  font-size: 3em;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
   margin-left: auto;
 }
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3em;
+  margin-left: auto;
+  font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+
 
 @keyframes changing-colors {
   0% {background-color: #f8fef0;}
@@ -44,18 +61,5 @@ p {
   height: 1rem;
   background: linear-gradient(to bottom, silver 0%, silver 40%, rgba(254,223,189,0) 100%);
 
- /* background-size: 100% 100%;*/
- /* display: block; */
- /* display: none; */
- /* position: fixed; */
- /* z-index: 999; */
- /* width:100vw; */
- /* height:4rem; */
- /* left:0; */
- /* top:0; */
- /* text-align: center; */
- /* background-position: top; */
- /* color:black; */
- /* transition: background-size .1s ease-in-out; */
 
 }
