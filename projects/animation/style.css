@@ -1,0 +1,119 @@
+html {
+  backgroud: floralwhite;
+}
+
+/* default margin and padding affect body */
+
+.flex {
+  /* positioning */
+  top:0;
+  left:0;
+
+  /* box-model */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* visual */
+  /* background: red; */
+}
+
+.circle {
+  /* box-model */
+  width: 25vh;
+  height: 25vh;
+
+  /* visual */
+  background:#212121;
+  border-radius: 50%;
+
+  /* animation */
+  animation: poulse 1s alternate infinite;
+  will-change: transform;
+}
+
+.square {
+  /* box-model */
+  width: 40vh;
+  height: 25vh;
+
+  /* visual */
+  background:gray;
+
+  /* animation */
+  /* animation: sinner 1s infinite linear; */
+  /* will-change: transform; */
+
+}
+
+.square:hover {
+  /* animation */
+  animation: sinner 1s infinite linear;
+  will-change: transform;
+}
+
+
+
+.runner {
+  /* positioning */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  /* box-model */
+  width: 300px;
+  height: 20px;
+
+  /* visual */
+  background: red;
+
+  /* animation */
+  animation: runner 2s infinite linear;
+}
+
+@keyframes poulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px lightgrey;}
+  100% {
+    transform: scale(1.5);
+    box-shadow: 100px 100px 25px grey;}
+}
+
+@keyframes poulse-two {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px lightgrey;}
+  100% {
+    transform: scale(1.25);
+    box-shadow: 75px 75px 20px grey;}
+}
+
+
+@keyframes sinner {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+
+
+@keyframes runner{
+  0% {transform: translateX(-300px);}
+  100% {transform: translateX(100vw);}
+}
+
+/*
+—any percentage acts on the parent container of the object
+—vh and vw represent viewport-height (or width) for responsive design!
+—50% is all that's needed for a circle
+—second trem in keyframe is the identifier
+—the percentages that follow are the actual keyframes (like in aftereffects)
+—declare the animation in css
+—defining the animation starts with the identifier, then length, then alternate (for repeating in reverse), then infinite, then ease
+—you can also add animation to spannnnnns!
+—Add "display: inline-block;"
+—try: animate on hover
+—you can add multiple transform qualities
+*/
