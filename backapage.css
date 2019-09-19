@@ -1,0 +1,61 @@
+/* backapage */
+
+.note {
+  /* positioning */
+  width: 100%;
+  height: 100%;
+  padding: 1em 1.5em;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  /* box-model */
+
+  /* typography */
+  overflow: hidden;
+
+  /* visual */
+  color: #fff;
+  background: white;
+}
+
+.note:before {
+  /* positioning */
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  /* box-model */
+  content: "";
+  display: block;
+  width: 0;
+
+
+  /* visual */
+  border-width: 0 40px 40px 0;
+  border-style: solid;
+  border-color: #fff #fff rgb(150, 150, 150) black;
+  background: rgb(150, 150, 150);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3), -2px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3), -2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3), -2px 2px 2px rgba(0,0,0,0.2);
+  /* Firefox 3.0 damage limitation */
+}
+
+
+.note.rounded {
+  border-radius: 5px 0 5px 5px;
+  -moz-border-radius: 5px 0 5px 5px;
+
+}
+
+.note.rounded:before {
+  border-width: 8px;
+  border-color: #fff #fff transparent transparent;
+  border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+}
+
+.note:hover {
+  border-width: 0 75px 75px 0;
+}
