@@ -35,11 +35,3 @@ VanillaTilt.init(document.querySelector(".header"), {
   max: 55,
   speed: 0,
 });
-
-jQuery.easing.def = "easeOutQuad";
-
-// var slow = $(".slow");
-// $(slow).slideUp({
-// 	duration: 1000,
-// 	easing: easeOutQuad,
-// 	complete: callback});

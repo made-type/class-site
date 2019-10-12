@@ -26,6 +26,7 @@ hr {
 }
 
 .changing-colors {
+  /* Animation */
   animation-name: changing-colors;
   animation-duration: 40s;
   animation-iteration-count: infinite;
@@ -44,27 +45,33 @@ hr {
 }
 
 .header {
+  /* position */
+  left: 0;
+  /* box model */
   width: 45vw;
   margin: 80px 40px;
-  left: 0;
   height: 35vh;
   display: flex;
-  /* padding: 0; */
   align-items: center;
   justify-content: center;
-  background-color: white;
+  /* visual */
+  /* background-color: white; */
+  /* misc */
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
 
 .inner-header {
-  transform: translateZ(100px);
+  /* box model */
   width: 90%;
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  /* visual */
+  border: solid 2px #2c2c2c;
+  /* misc */
+  transform: translateZ(100px);
 }
 
 .links-container {
@@ -78,8 +85,6 @@ hr {
   padding: 0;
   display: flex;
   flex-direction: column;
-  /* visual */
-  /* background-color: whitesmoke; */
 }
 
 .links-wrapper {
@@ -88,53 +93,81 @@ hr {
   padding: 0;
   height: 25vh;
   width: 100vw;
-  /* visual */
-  border-top: solid 2px #2c2c2c;
   justify-content: center;
   align-items: center;
   display: flex;
+  /* visual */
+  border-top: solid 2px #2c2c2c;
 }
 
 .scroll-box {
   /* box model */
-  /* width: 100vw;
-  height: 25vh; */
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* visual */
 }
-
 
 .marquee {
   width: 100vw;
   overflow: hidden;
-  /* border: 1px solid #ccc; */
-  /* background: #ccc; */
 }
-
 
 .marqueerev {
   width: 100vw;
   overflow: hidden;
-  /* border: 1px solid #ccc; */
-  /* background: #ccc; */
 }
 
-
 @keyframes changing-colors {
-  0% {background-color: #f8fef0;}
-  8% {background-color: #fcf3f6;}
-  16% {background-color: #fffff3;}
-  24% {background-color: #f3f3ff;}
-  32% {background-color: #f3ffff;}
-  40% {background-color: #f2fef2;}
-  48% {background-color: #fbfbef;}
-  56% {background-color: #f6eefb;}
-  64% {background-color: #f2f2fe;}
-  72% {background-color: #f1fef7;}
-  80% {background-color: #f8ecec;}
-  88% {background-color: #fff3ff;}
-  96% {background-color: #f9f1fc;}
-    }
+  0% {
+    background-color: #f8fef0;
+  }
+
+  8% {
+    background-color: #fcf3f6;
+  }
+
+  16% {
+    background-color: #fffff3;
+  }
+
+  24% {
+    background-color: #f3f3ff;
+  }
+
+  32% {
+    background-color: #f3ffff;
+  }
+
+  40% {
+    background-color: #f2fef2;
+  }
+
+  48% {
+    background-color: #fbfbef;
+  }
+
+  56% {
+    background-color: #f6eefb;
+  }
+
+  64% {
+    background-color: #f2f2fe;
+  }
+
+  72% {
+    background-color: #f1fef7;
+  }
+
+  80% {
+    background-color: #f8ecec;
+  }
+
+  88% {
+    background-color: #fff3ff;
+  }
+
+  96% {
+    background-color: #f9f1fc;
+  }
+}
