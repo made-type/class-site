@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  /* cursor: grab; */
 }
 
 :root {
@@ -23,6 +24,12 @@ p {
 
 hr {
   z-index: 9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .noselect {
@@ -74,6 +81,7 @@ hr {
   /* misc */
   transform-style: preserve-3d;
   transform: perspective(1000px);
+  cursor: none;
 }
 
 .inner-header {
