@@ -70,7 +70,7 @@ a {
   /* position */
   left: 0;
   /* box model */
-  width: 45vw;
+  width: 550px;
   margin: 80px 40px;
   height: 35vh;
   display: flex;
