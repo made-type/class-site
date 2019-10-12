@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+:root {
+  --background-color:
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2vh;
+}
+
+hr {
+  z-index: 9;
+}
+
+.changing-colors {
+  animation-name: changing-colors;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.page-container {
+  /* position */
+  left: 0;
+  top: 0;
+  /* box model */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 45vw;
+  margin: 80px 40px;
+  left: 0;
+  height: 35vh;
+  display: flex;
+  /* padding: 0; */
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.inner-header {
+  transform: translateZ(100px);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.links-container {
+  /* position */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* box model */
+  width: 100vw;
+  height: 25vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* visual */
+  /* background-color: whitesmoke; */
+}
+
+.links-wrapper {
+  /* box model */
+  margin: 0;
+  padding: 0;
+  height: 25vh;
+  width: 100vw;
+  /* visual */
+  border-top: solid 2px #2c2c2c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.scroll-box {
+  /* box model */
+  /* width: 100vw;
+  height: 25vh; */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* visual */
+}
+
+
+.marquee {
+  width: 100vw;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background: #ccc; */
+}
+
+
+.marqueerev {
+  width: 100vw;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background: #ccc; */
+}
+
+
+@keyframes changing-colors {
+  0% {background-color: #f8fef0;}
+  8% {background-color: #fcf3f6;}
+  16% {background-color: #fffff3;}
+  24% {background-color: #f3f3ff;}
+  32% {background-color: #f3ffff;}
+  40% {background-color: #f2fef2;}
+  48% {background-color: #fbfbef;}
+  56% {background-color: #f6eefb;}
+  64% {background-color: #f2f2fe;}
+  72% {background-color: #f1fef7;}
+  80% {background-color: #f8ecec;}
+  88% {background-color: #fff3ff;}
+  96% {background-color: #f9f1fc;}
+    }

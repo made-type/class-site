@@ -2,31 +2,102 @@
 <html>
 
 <head>
-  <title>class site</title>
-  <link rel="stylesheet" href="backapage.css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrolling menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 
+
+</head>
 
 <body class="changing-colors">
 
-  <h1>handmade by cody hopper</h1>
+  <div class="header" data-tilt data-tilt-max-glare="0.8">
+    <div class="inner-header changing-colors">
+      <h1>
+        this handmade website<br>
+        by cody hopper
+      </h1>
+    </div>
 
-  <div>
-    <a href="projects/niemann-interview/index.html" class="project-button">
-      niemann interview</a>
-    <br>
-    <a href="projects/flexbox-position/index.html" class="project-button">
-      flexbox tutorial</a>
-    <br>
-    <a href="projects/eliot-poem/level-1/level-1_1.html/index.html" class="project-button">
-      poem project</a>
-    <br>
-    <a href="projects/animation/index.html" class="project-button">
-      animation project</a>
+
+
   </div>
-  <br>
-  <br>
+
+  <div class="links-container">
+    <div class="links-wrapper">
+      <div class="marquee">
+        <p>
+          The Creative Independent Article
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Flexbox Tutorial
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Four Preludes by T. S. Eliot
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          A Handmade Web—Response
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &#9965;
+        </p>
+      </div>
+    </div>
+
+    <div class="links-wrapper">
+      <div class="marqueerev">
+        <div class="project">
+          <p>
+            CSS Animation Tutorial
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Responsive Website Tutorial
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Javascript Tutorial
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            A Rant on Technology—Response
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &#9965;
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="links-wrapper">
+      <div class="marquee">
+        <p>
+          My Website is a Shifting House Next to a River of Knowledge—Response
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Scroll Skim Stare—Response
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Spirit Surfing—Response
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/vanilla-tilt.js"></script>
+  <script src="js/function.js"></script>
+
+
+
+  <!-- always add javascript to the end -->
+  <!-- window.onload = function () {insert function } -->
+
 </body>
+
 
 </html>

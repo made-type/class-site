@@ -1,0 +1,68 @@
+html {
+  cursor: grab;
+}
+
+p {
+  font-family: sans-serif;
+  text-decoration: underline dotted 8px;
+}
+
+#box {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background: black;
+  transition: transform 1000ms ease;
+}
+
+
+.style {
+  transform: translateX(300px);
+  writing-mode: vertical-rl;
+}
+
+.button {
+  cursor: pointer;
+  text-align: right;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+}
+
+.box-label {
+  position: fixed;
+  right: 0;
+  top: 10px;
+  width: 99px;
+  padding: 0;
+  /* transform: rotate(180); */
+  color: white;
+  writing-mode: vertical-rl;
+
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome, Opera and Firefox */
+}

@@ -3,43 +3,123 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  padding: 20px;
+:root {
+  --background-color:
 }
 
-p {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1em;
-  margin-left: auto;
+body {
+  margin: 0;
 }
 
 h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 1em;
-  margin-left: auto;
-  font-weight: 600;
+  font-weight: lighter;
 }
 
-.project-button {
-  width: 10%;
-  height: 20px;
-  margin: 25px;
-
-  /* box-model */
-  top: 50%;
-  left: auto;
-
-  /* visual */
-  background-color: none;
-  border: 5px;
-  border-radius: 100%;
-
-  /* typography */
-  text-decoration: none;
-  color: #212121
+p {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-size: 2vh;
+}
 
+hr {
+  z-index: 9;
+}
+
+.changing-colors {
+  animation-name: changing-colors;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.page-container {
+  /* position */
+  left: 0;
+  top: 0;
+  /* box model */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 45vw;
+  margin: 80px 40px;
+  left: 0;
+  height: 35vh;
+  display: flex;
+  /* padding: 0; */
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.inner-header {
+  transform: translateZ(100px);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.links-container {
+  /* position */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* box model */
+  width: 100vw;
+  height: 25vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* visual */
+  /* background-color: whitesmoke; */
+}
+
+.links-wrapper {
+  /* box model */
+  margin: 0;
+  padding: 0;
+  height: 25vh;
+  width: 100vw;
+  /* visual */
+  border-top: solid 2px #2c2c2c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.scroll-box {
+  /* box model */
+  /* width: 100vw;
+  height: 25vh; */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* visual */
+}
+
+
+.marquee {
+  width: 100vw;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background: #ccc; */
+}
+
+
+.marqueerev {
+  width: 100vw;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background: #ccc; */
 }
 
 
@@ -58,21 +138,3 @@ h1 {
   88% {background-color: #fff3ff;}
   96% {background-color: #f9f1fc;}
     }
-
-.changing-colors {
-  animation-name: changing-colors;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 1rem;
-  background: linear-gradient(to bottom, silver 0%, silver 40%, rgba(254,223,189,0) 100%);
-
-
-}
