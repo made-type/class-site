@@ -2,7 +2,6 @@ html {
   cursor: grab;
 }
 
-
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
@@ -12,42 +11,35 @@ p {
 }
 
 body {
-  margin: 20px;
-  /* padding: 20px; */
+  padding: 1vw;
   display: flex;
-  left: auto;
-  /* position: absolute; */
-  /* float: left; */
-  top: 0;
-  /* width: 97%; */
-  /* height: 100%; */
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+  /* left: auto; */
 }
 
 #left {
   margin: 0;
-  top: 20;
-  left: 52%;
   padding: 0;
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  width: 50%;
-  background: brown;
+  width: 45vw;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+  /* background: black; */
 }
 
 #right {
   margin: 0;
-  top: 20;
-  left: 20px;
   padding: 0;
   display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-content: center;
-  /* flex-wrap: nowrap; */
+  flex-direction: row;
+  align-content: space-between;
   justify-content: space-between;
-  width: 50%;
-  background: lightgreen;
+  position: relative;
+  width: 45vw;
+  height: 100%;
+  /* background: grey; */
 }
 
 .draggable {
