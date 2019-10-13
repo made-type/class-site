@@ -1,0 +1,21 @@
+#draggable {
+  width: 350px;
+  height: 350px;
+  padding: 0.5em;
+  margin: 0;
+  top: 25vh;
+
+  left: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: dotted .5vw grey;
+}
+
+p {
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: grey;
+}

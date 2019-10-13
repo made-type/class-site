@@ -1,0 +1,116 @@
+html {
+  cursor: grab;
+}
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+body {
+  margin: 20px;
+  /* padding: 20px; */
+  display: flex;
+  left: auto;
+  /* position: absolute; */
+  /* float: left; */
+  top: 0;
+  /* width: 97%; */
+  /* height: 100%; */
+}
+
+#left {
+  margin: 0;
+  top: 20;
+  left: 52%;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 50%;
+  background: brown;
+}
+
+#right {
+  margin: 0;
+  top: 20;
+  left: 20px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-content: center;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  width: 50%;
+  background: lightgreen;
+}
+
+.draggable {
+  /* position */
+  position: absolute;
+  /* box model */
+  width: 350px;
+  height: 350px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* visual */
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 2%;
+  box-shadow: 1px 2px 4px #999;
+}
+
+.front {
+  z-index: 100;
+}
+
+.boxheader {
+  /* position */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* box model */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 2px;
+  /* visual */
+  border-bottom: solid 2px black;
+}
+
+.circle {
+  /* position */
+  top: auto;
+  right: 8px;
+  position: absolute;
+  /* box model */
+  width: 25px;
+  height: 25px;
+  /* visual */
+  border: solid 2px black;
+  border-radius: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
