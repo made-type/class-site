@@ -1,5 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   cursor: grab;
+  background-color: var(--bg-color-inv);
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--secondary-font-color);
+  font-size: .25rem;
 }
 
 p {
@@ -12,54 +23,204 @@ p {
 
 :root {
   --bg-color: white;
+  --bg-color-inv: black;
+  --secondary-font-color: white;
   --border-color: black;
   --font-color: black;
 }
 
 [data-theme="dark"] {
   --bg-color: black;
+  --bg-color-inv: white;
+  --secondary-font-color: black;
   --border-color: white;
   --font-color: white;
 }
 
-
 body {
-  padding: 1vw;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+#page {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 94vh;
+  height: 100vh;
+  max-height: 100vh;
+  /* position: absolute; */
+  padding: 40px;
+  margin: 0;
+  overflow: hidden;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
 
-nav {
+.nav {
   display: flex;
-  position: fixed;
+  position: absolute;
   justify-content: flex-end;
   padding: 20px 20px;
-  top: 0;
+  top: 2%;
   right: 0;
+}
+
+.transition {
+  animation-name: transition;
+  animation-duration: 750ms;
+}
+
+.project {
+  opacity: 0;
+}
+
+.project.animated {
+  animation-name: fadeInDown;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+
+.box-0 {
+  left: 0%;
+  top: 0%;
+  animation-delay: 000ms;
+}
+
+.box-1 {
+  left: 4%;
+  top: 4%;
+  animation-delay: 100ms;
+}
+
+.box-2 {
+  left: 8%;
+  top: 8%;
+  animation-delay: 200ms;
+}
+
+.box-3 {
+  left: 12%;
+  top: 12%;
+  animation-delay: 300ms;
+}
+
+.box-4 {
+  left: 16%;
+  top: 16%;
+  animation-delay: 400ms;
+}
+
+.box-5 {
+  left: 20%;
+  top: 20%;
+  animation-delay: 500ms;
+}
+
+.box-6 {
+  left: 24%;
+  top: 24%;
+  animation-delay: 600ms;
+}
+
+.box-7 {
+  left: 28%;
+  top: 28%;
+  animation-delay: 700ms;
+}
+
+.box-8 {
+  left: 32%;
+  top: 32%;
+  animation-delay: 800ms;
+}
+
+.box-9 {
+  left: 36%;
+  top: 36%;
+  animation-delay: 900ms;
+}
+
+.box-10 {
+  left: 40%;
+  top: 40%;
+  animation-delay: 1000ms;
+}
+
+.box-11 {
+  left: 44%;
+  top: 44%;
+  animation-delay: 1100ms;
+}
+
+.box-12 {
+  left: 48%;
+  top: 48%;
+  animation-delay: 1200ms;
+}
+
+.box-13 {
+  left: 56%;
+  top: 42%;
+  animation-delay: 1300ms;
+}
+
+.box-14 {
+  left: 60%;
+  top: 45%;
+  animation-delay: 1400ms;
+}
+
+.box-15 {
+  left: 64%;
+  top: 48%;
+  animation-delay: 1500ms;
+}
+
+.box-16 {
+  left: 68%;
+  top: 51%;
+  animation-delay: 1700ms;
+}
+
+.box-17 {
+  left: 72%;
+  top: 54%;
+  animation-delay: 1800ms;
+}
+
+.box-18 {
+  left: 76%;
+  top: 57%;
+  animation-delay: 1900ms;
+}
+
+.box-19 {
+  left: 80%;
+  top: 60%;
+  animation-delay: 2000ms;
+
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 #left {
   margin: 0;
-  padding: 0;
-  width: 45vw;
+  padding: 45px;
+  width: 80vw;
   bottom: 0;
   position: relative;
-  height: 100%;
-}
-
-#right {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  justify-content: space-between;
-  position: relative;
-  width: 45vw;
   height: 100%;
 }
 
@@ -78,7 +239,7 @@ nav {
   background-color: var(--bg-color);
   border: solid 2px var(--border-color);
   border-radius: 2%;
-  box-shadow: 1px 2px 4px #999;
+  box-shadow: 1px 2px 6px #999;
 }
 
 .draggable:active {

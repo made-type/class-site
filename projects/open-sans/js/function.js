@@ -1,3 +1,12 @@
+window.onload = function() {
+  setTimeout(function() {
+    var els = document.querySelectorAll('.project');
+    for (var i = 0; i < els.length; i++) {
+      els[i].classList.add('animated');
+    }
+  }, 100);
+}
+
 $('.front-on-click').click(function(){
     $('.front').removeClass('front');
     $(this).addClass('front');
