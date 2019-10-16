@@ -113,7 +113,7 @@ p {
 
 .project.animated {
   animation-name: fadeInDown;
-  animation-duration: 100ms;
+  animation-duration: 300ms;
   animation-fill-mode: forwards;
 }
 
@@ -340,7 +340,7 @@ input:checked+.slider:before {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -15%, 0);
+    transform: translate3d(0, -5%, 0);
   }
 
   to {
