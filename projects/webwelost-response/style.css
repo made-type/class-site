@@ -113,7 +113,7 @@ p {
   user-select: none;
 }
 
-object {
+iframe {
   width: 55vw;
   min-height: 85vh;
   border: solid 2px #2c2c2c;
