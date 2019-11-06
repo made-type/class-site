@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+/* typography */
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 2.25em
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+/* bg color */
+:root {
+  --background-color:
+}
+
+/* scrollbar */
+.scrollbar::-webkit-scrollbar-track {
+  border: 0px solid #2c2c2c;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.25;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #2c2c2c;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.site {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  width: 50vw;
+  min-height: 85vh;
+  opacity: .25;
+}
+
+.site-bg {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  width: 50vw;
+  min-height: 85vh;
+  background: white;
+}
+
+.response {
+  /* position */
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  /* box-model */
+  width: 50%;
+  max-height: 85vh;
+  min-height: 85vh;
+  padding: 40px;
+  margin: 0;
+  /* visual */
+  opacity: .25;
+  border: solid 2px #2c2c2c;
+  /* misc */
+  overflow-y: scroll;
+  user-select: none;
+}
+
+object {
+  width: 55vw;
+  min-height: 85vh;
+  border: solid 2px #2c2c2c;
+}
+
+.button {
+  width: 55vw;
+  min-height: 85vh;
+  /* background:green; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
+.front {
+  z-index: 100;
+  opacity: 1;
+}
+
+.front .button {
+  pointer-events: none;
+}
+
+.changing-colors {
+  animation-name: changing-colors;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changing-colors {
+  0% {
+    background-color: #f8fef0;
+  }
+
+  8% {
+    background-color: #fcf3f6;
+  }
+
+  16% {
+    background-color: #fffff3;
+  }
+
+  24% {
+    background-color: #f3f3ff;
+  }
+
+  32% {
+    background-color: #f3ffff;
+  }
+
+  40% {
+    background-color: #f2fef2;
+  }
+
+  48% {
+    background-color: #fbfbef;
+  }
+
+  56% {
+    background-color: #f6eefb;
+  }
+
+  64% {
+    background-color: #f2f2fe;
+  }
+
+  72% {
+    background-color: #f1fef7;
+  }
+
+  80% {
+    background-color: #f8ecec;
+  }
+
+  88% {
+    background-color: #fff3ff;
+  }
+
+  96% {
+    background-color: #f9f1fc;
+  }
+}
