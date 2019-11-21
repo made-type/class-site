@@ -4,6 +4,10 @@ a {
   font-size: 1.2em;
 }
 
+body {
+  margin: 2rem;
+}
+
 .button {
   /* positioning */
   position: fixed;
