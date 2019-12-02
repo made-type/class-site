@@ -34,6 +34,31 @@ h2 {
   left: 5%;
   position: absolute;
   transform: translateX(-50%), translateY(-50%);
+  animation: fadein 1s linear 300ms 1 forwards;
+animation-timing-function: cubic-bezier();
+  opacity: 0;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
