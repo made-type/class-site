@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 2000px;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.test-blur {
+  animation: blurr 7s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blurr {
+  0% {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+  }
+
+  50% {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+  }
+}
+
+.frame {
+  position: fixed;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.palm {
+  /* position */
+  position: fixed;
+  width: 150%;
+  /* box model */
+  display: block;
+  z-index: -1;
+  background-size: cover;
+  /* visual */
+  filter: blur(0px) saturate(100%);
+  opacity: 1;
+}
+
+.thumbnail-1-pos {
+  top: 50%;
+  left: 25%;
+  animation-name: drift-1;
+}
+
+.thumbnail-2-pos {
+  top: 15%;
+  left: 40%;
+  animation-name: drift-2;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.thumbnail-3-pos {
+  top: 20%;
+  left: 10%;
+  animation-name: drift-3;
+  -webkit-transform: translateZ(-300px) scale(2);
+   transform: translateZ(-300px) scale(2);
+   z-index: 3;
+}
+
+.thumbnail-4-pos {
+  top: 20%;
+  left: 80%;
+  animation-name: drift-4;
+  -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+}
+
+.clean-thumbnail {
+  /* position */
+  position: absolute;
+  /* box model */
+  width: 10%;
+  height: 25vh;
+  /* visual */
+  filter: blur(20px) saturate(150%);
+  opacity: 1;
+  /* animate */
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transition: opacity .2s ease, filter .2s ease;
+}
+
+.clean-thumbnail:hover {
+  filter: blur(0) saturate(100%);
+}
+
+@keyframes drift-1 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(-15%, 50%);
+  }
+
+  100% {
+    transform: translate(50%, 75%);
+  }
+}
+
+@keyframes drift-2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(40%, -20%);
+  }
+
+  100% {
+    transform: translate(60%, -50%);
+  }
+}
+
+@keyframes drift-3 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(-70%, 20%);
+  }
+
+  100% {
+    transform: translate(-20%, 60%);
+  }
+}
+
+@keyframes drift-4 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(15%, 30%);
+  }
+
+  100% {
+    transform: translate(60%, 40%);
+  }
+}
+
+@keyframes drift-5 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(60%, 70%);
+  }
+
+  100% {
+    transform: translate(50%, 80%);
+  }
+}
+
+&:nth-child(1) {
+  animation-duration: 10s;
+  animation-name: drift-1;
+}
+
+&:nth-child(2) {
+  animation-duration: 11s;
+  animation-name: drift-2;
+}
+
+&:nth-child(3) {
+  animation-duration: 12s;
+  animation-name: drift-3;
+}
+
+&:nth-child(4) {
+  animation-duration: 13s;
+  animation-name: drift-4;
+}
+
+&:nth-child(5) {
+  animation-duration: 14s;
+  animation-name: drift-5;
+}
+
+&:nth-child(6) {
+  animation-duration: 15s;
+  animation-name: drift-1;
+}
+
+&:nth-child(7) {
+  animation-duration: 16s;
+  animation-name: drift-2;
+}
+
+&:nth-child(8) {
+  animation-duration: 17s;
+  animation-name: drift-3;
+}
+
+&:nth-child(9) {
+  animation-duration: 18s;
+  animation-name: drift-4;
+}
+
+&:nth-child(10) {
+  animation-duration: 19s;
+  animation-name: drift-5;
+}
+
+&:nth-child(11) {
+  animation-duration: 20s;
+  animation-name: drift-1;
+}
+
+&:nth-child(12) {
+  animation-duration: 21s;
+  animation-name: drift-2;
+}
+
+&:nth-child(13) {
+  animation-duration: 22s;
+  animation-name: drift-3;
+}
+
+&:nth-child(14) {
+  animation-duration: 23s;
+  animation-name: drift-4;
+}
+
+&:nth-child(15) {
+  animation-duration: 24s;
+  animation-name: drift-5;
+}
+
+@include breakpoint($s-down) {
+
+  &:nth-child(6),
+  &:nth-child(7),
+  &:nth-child(8),
+  &:nth-child(9),
+  &:nth-child(10),
+  &:nth-child(11),
+  &:nth-child(12),
+  &:nth-child(13),
+  &:nth-child(14),
+  &:nth-child(15) {
+    display: none;
+  }
+}
+
+
+@keyframes drift-1 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(-15%, 50%);
+  }
+
+  100% {
+    transform: translate(50%, 75%);
+  }
+}
+
+@keyframes drift-2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(40%, -20%);
+  }
+
+  100% {
+    transform: translate(60%, -50%);
+  }
+}
+
+@keyframes drift-3 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(-70%, 20%);
+  }
+
+  100% {
+    transform: translate(-20%, 60%);
+  }
+}
+
+@keyframes drift-4 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(15%, 30%);
+  }
+
+  100% {
+    transform: translate(60%, 40%);
+  }
+}
+
+@keyframes drift-5 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(60%, 70%);
+  }
+
+  100% {
+    transform: translate(50%, 80%);
+  }
+}
