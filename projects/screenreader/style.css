@@ -30,6 +30,13 @@ h1 {
   user-select: none;
 }
 
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2vw;
+  line-height: calc(1em + .2vw);
+  user-select: none;
+}
+
 p {
   font-family: 'Work Sans', sans-serif;
   font-size: calc(18px + .25vw);
@@ -146,7 +153,7 @@ aside {}
   }
 
   .card {
-    width: 50%;
+    width: 45%;
     text-align: left;
     flex-direction: column;
     z-index: 999999999;
