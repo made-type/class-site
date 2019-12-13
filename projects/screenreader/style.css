@@ -162,7 +162,7 @@ aside {}
   .kbd, kbd {
     font-size: .9em;
     padding: .0625rem .5rem;
-    border-radius: .125rem;
+    border-radius: .25rem;
     border: 1px solid #2c2c2c;
     box-shadow: 1px 1px 0 #2c2c2c, 2px 2px 0 #2c2c2c;
     margin: 0 .25rem;
