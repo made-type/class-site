@@ -1,0 +1,55 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #efeeee;
+  padding: 40px;
+  color: #2c2c2c;
+  width: 800px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.container>div {
+  background-color: #efeeee;
+  color: #2c2c2c;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  vertical-align: bottom;
+}
+
+#one {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.14);
+}
+
+#two {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.14), 0 12px 4px -8px rgba(0, 0, 0, 0.2);
+}
+
+#three {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.14), 0 12px 4px -8px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+#four {
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.750);
+}
+
+#five {
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.750), 6px 6px 16px rgba(209, 205, 199, 0.750);
+}
+
+#six {
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.750), 6px 6px 16px rgba(209, 205, 199, 0.750);
+  border: 20px rgba(255, 255, 255, .5);
+}

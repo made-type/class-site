@@ -1,0 +1,145 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+$animate: all 0.2s ease-in-out;
+
+/** Header and other non-related styling **/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#dccf39 -50%, #b65e00 150%);
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  margin: 50px auto;
+  width: 960px;
+  max-width: 100%;
+}
+
+a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+h2>a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+h2>a:hover {
+  color: #000;
+}
+
+h2>a:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h2>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1)
+  left: 0;
+  width: 100%;
+}
+
+/** Hover-related CSS **/
+#examples {
+  display: flex;
+  flex-flow: column;
+  max-width: 100%;
+  width: 960px;
+  background-color: white;
+  opacity: 0.95;
+  padding: 30px 30px;
+  margin: 0 auto 45px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 30px 15px 60px;
+}
+
+.example {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 45px;
+}
+
+.hover {
+  font-size: 54px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: $animate;
+  position: relative;
+}
+
+&:before,
+&:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: $animate;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: darken(orange, 5%);
+}
+
+&.hover-1 {
+
+  &:before,
+  &:after {
+    left: 0;
+  }
+}
+
+&:hover {
+  cursor: pointer;
+
+  .hover {
+
+    &:before,
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+
+    &.hover-3,
+    &.hover-4 {
+
+      &:before,
+      &:after {
+        width: 50%;
+      }
+    }
+  }
+}
+}
+}
